@@ -213,6 +213,7 @@ let toppers = marks.filter((val)=>{
 console.log(toppers)
 */
 
+/*
 let n = prompt("Enter a number");
 let arr=[]
 
@@ -225,6 +226,212 @@ let product = arr.reduce((prev, next)=>{
 })
 
 console.log(product)
+*/
+
+/*
+let newBtn = document.createElement("button");
+newBtn.innerText= "Aryan loves you";
+newBtn.style.color="Red";
+newBtn.style.backgroundColor="Blue";
+
+document.querySelector("body").prepend(newBtn)
+
+let para = document.querySelector("p");
+para.classList.add("nandini");
+para.classList.remove("nancy")
+*/
+
+/*
+btn.addEventListener("click" , (e)=>{
+    console.log("btn was clicked")
+});
+
+btn.addEventListener("click" , (e)=>{
+    console.log("btn1 was clicked")
+})
+
+const handler3 = ()=>{
+    console.log("Aryan is getting anxious");
+}
+
+btn.addEventListener("click", handler3)
+*/
+
+/*
+let modeBtn= document.querySelector("#mode");
+let currMode= "light";  //dark
+
+ modeBtn.addEventListener("click", ()=>{
+   if(currMode === "light"){
+      currMode = "dark";
+      document.querySelector("body").style.backgroundColor = "black";
+   } else{
+    currMode = "light";
+      document.querySelector("body").style.backgroundColor = "white";   
+}
+console.log(currMode);
+ })
+ */
+
+ /*
+ class toyotaCar {
+     constructor() {
+         console.log("constructor is getting called");
+     }
+ 
+     start() {
+         console.log("Let the car start");
+     }
+ 
+     stop() {
+         console.log("the car stopped moving");
+     }
+ 
+     setBrand() {
+         console.log("Hello this is my brand");
+     }
+ }
+ 
+ let fortuner = new toyotaCar();
+ let lexus = new toyotaCar();
+*/
+
+
+/*
+// eg 1)
+class parent {
+    hello(){
+        console.log("Hello this is my world")
+    }
+}
+class child extends parent{
+    bye(){
+        console.log("hi")
+    }
+}
+let obj = new child();
+
+// eg 2)
+ class person{
+    eat(){
+        console.log("A person eats food")
+    }
+    sleep(){
+        console.log("The person sleeps for 10 hours")
+    }
+    work(){
+        console.log("The person is also hardworking")
+    }
+ }  
+ class engineer extends person{
+    studies(){
+        console.log("person graduated from a big college")
+    }
+    work(){
+        console.log("Person is a software developer")
+    }
+ }
+ class doctor extends engineer{
+    workplace(){
+        super.sleep()
+        console.log("The doctor works in Aims Delhi")
+    }
+    work(){
+        console.log("doctor's work is to save people")
+    }
+ }
+
+ let nancy = new doctor();
+
+*/
+
+/*
+let DATA = "This is my data"
+
+class user {
+    constructor(name ,email){
+        this.name = name;
+        this.email = email;
+    }
+    viewData(){
+        console.log("data = ", DATA)
+    }
+}
+
+let student1= new user("aryan", "aryanmamania17@gmail.com");
+let student2= new user("nancy", "nancy27@gmail.com")
+*/
+
+/*
+console.log("hello world");
+console.log("i love my nancy");
+ 
+setTimeout(()=>{
+    console.log("But does nancy loves me ?")
+
+}, 4000);
+
+console.log("Aryan loves nancy")
+
+*/
+
+/*
+function getData(dataId, getNextData){
+    setTimeout(()=>{
+        console.log("data", dataId);
+        if(getNextData){
+            getNextData();
+        }
+    }, 2000);
+}
+getData(1, ()=>{
+    getData(2, ()=>{
+        getData(3, ()=>{
+            getData(4)
+        })
+    })
+})
+*/
+
+/*
+const getPromise= ()=>{
+    return new Promise((resolve,reject)=>{
+        console.log("I am promise");
+        resolve(" network error")
+    });
+};
+let promise = getPromise();
+promise.then((res)=>{
+    console.log("promise fulfilled", res)
+})
+
+promise.catch((err)=>{
+    console.log("rejected", err)
+})
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
